@@ -8,12 +8,13 @@ export default function Home() {
   return (    
     <div class="container-fluid d-flex flex-column">
       <Head>
-      <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Patua+One&display=swap" rel="stylesheet"/>  
+        <title>Masking Reality</title>
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Roboto&family=Patua+One&display=swap" rel="stylesheet"/>  
       </Head>
       <div class="row d-flex vh-100">
         <div class="col">
           <div class="title text-center" id="Home">Masking Reality</div>
-          <Navbar items={['Technical Development', 'Worldbuilding', 'Motion Capture', 'Meet the Team']}></Navbar>
+          <Navbar items={['Technical Development', 'Visual Development', 'Challenges', 'Meet the Team']}></Navbar>
           <div class="row d-flex gx-0" style={{height: "70%"}}>
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6QXY8Wz341Y" allowFullScreen></iframe>
@@ -21,7 +22,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/*}
+      {/*} https://stackoverflow.com/questions/49225505/how-to-make-text-wrap-around-image-with-bootstrap-4-without-float
       <article class="row  mt-5 no-gutters">
         <div class="col-md-6">
           <div class="image-wrapper float-start pe-4 ">
@@ -39,40 +40,54 @@ export default function Home() {
       <div class="row vh-100 d-flex">
         <div class="col">
           <div class="subtitle text-center" id="Technical Development">Technical Development</div>
-          <Navbar items={['Worldbuilding', 'Motion Capture', 'Meet the Team', 'Home']}></Navbar>
+          <Navbar items={['Visual Development', 'Challenges', 'Meet the Team', 'Home']}></Navbar>
           <div class="image-wrapper float-start p-3">
             <img class="img-fluid" width="600px" height="300px"></img>
           </div>
           <div class="single-post-content-wrapper p-3">          
-            Most technical development occurred within three aspects of our project: integration with Unreal, proceduralism, and working with our MetaHuman lead “actor.” Unreal was used very early on in our development as a pre-viz tool, allowing us to quickly iterate on lighting and look dev for the entirety of the film. The “virtual world” portion was rendered completely real-time in Unreal for the final video. The usage of the engine also enabled us to use Houdini to full effect, as an HDA (Houdini Digital Asset) allowed us to quickly create the caves and cliffs scene in this portion of the short.
+            Most technical development occurred within three aspects of our project: integration with Unreal, proceduralism, and working with our MetaHuman lead “actor.” Unreal was used very early on in our development as a pre-viz tool, allowing us to quickly iterate on lighting and look dev for the entirety of the film. The “virtual world” portion was rendered completely real-time in Unreal for the final video. The usage of the engine also enabled us to employ Houdini in full effect, as HDA (Houdini Digital Asset) creation allowed us to quickly create the procedural caves and cliffs seen in this portion of the film. Being able to work realtime and seeing our creative decisions unfold so quickly gave us the confidence to pursue our artistic vision.
             <br/><br/>
-            The usage of MetaHuman created some exciting creative opportunities as well. Having access to such a high quality digital actor in the cyberpunk “reality” portion of our video was essential to effective storytelling, especially with our added interest of using custom motion capture data. Though most of the motions seen in this film are from Mixamo, we did get a chance to record, clean, and implement our own data using OptiTrack Motive (later retargeted using Maya’s HumanIK). 
+            The usage of MetaHuman created some exciting creative opportunities as well. Having access to such a high quality digital actor in the cyberpunk “reality” portion of our video was essential to effective storytelling, especially with our added interest of using custom motion capture data. Though most of the motions seen in this film are from Mixamo, we did get a chance to record, clean, and implement our own data using OptiTrack Motive (later retargeted using Maya’s HumanIK). The benefit of this pipeline is that it plays well with the scrappiness of the creative process. We found plenty of room for experimentation both technically and creatively, leading to many exciting developments in our workflow. 
           </div>
-          <div class="row d-flex flex-row justify-content-around">
-            <img class="img-fluid" style={{"max-width": "400px"}} height="auto" src="img/mocapOmarTest.gif"></img>
-            <img class="img-fluid" style={{"max-width": "400px"}} src="img/mocapOmarTest.gif"></img>
-            <img class="img-fluid" style={{"max-width": "400px"}} src="img/mocapOmarTest.gif"></img>
+          <div class="row flex-row position-static justify-content-around" style={{"min-width" : "100%"}}>
+            <figure style={{"max-width": "400px"}}>
+              <img class="img-fluid figure-img"  height="auto" src="img/mocapOmarTest.gif"/>
+              <figcaption class="figure-caption text-center">Early motion capture tests for our MetaHuman</figcaption>
+            </figure>
+            <figure style={{"max-width": "400px"}}>
+              <img class="img-fluid figure-img"  height="auto" src="img/mocapOmarTest.gif"/>
+              <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+            </figure>
+            <figure style={{"max-width": "400px"}}>
+              <img class="img-fluid figure-img"  height="auto" src="img/mocapOmarTest.gif"/>
+              <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+            </figure>
           </div>              
         </div>         
       </div>
       
       <div class="row vh-100 d-flex">
-        <div class="subtitle text-center" id="Motion Capture">Motion Capture</div>
-          <Navbar items={['Worldbuilding', 'Technical Development', 'Meet the Team', 'Home']}></Navbar>
-          <p>
+        <div class="col">
+          <div class="subtitle text-center" id="Visual Development">Visual Development</div>
+          <Navbar items={['Challenges', 'Technical Development', 'Meet the Team', 'Home']}></Navbar>
+          <div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus augue sit amet tellus ullamcorper, quis ultricies velit tempus. Praesent tincidunt, sem in porttitor convallis, nunc purus pellentesque libero, nec efficitur metus leo ac nunc. In tempus arcu turpis, nec interdum metus tempus non. Nulla at vestibulum elit, eu vestibulum est. Integer rhoncus orci id dui varius, sagittis faucibus turpis aliquet. Morbi ornare elementum lorem, sit amet gravida magna accumsan quis. Maecenas rutrum pulvinar eros, nec porta mi condimentum eu. Mauris et ultrices erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam hendrerit, turpis a blandit mattis, ligula felis congue ipsum, ac euismod mi arcu non odio. Nulla porttitor augue eget mi pulvinar gravida. Etiam eu lectus non elit tincidunt venenatis. Aliquam sit amet quam scelerisque, bibendum ex a, lobortis justo. 
-          </p>          
+          </div>   
+        </div>       
       </div>
       <div class="row vh-100 d-flex">
-        <div class="subtitle text-center" id="Worldbuilding">Worldbuilding</div>
-          <Navbar items={['Motion Capture', 'Technical Development', 'Meet the Team', 'Home']}></Navbar>
-          
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus augue sit amet tellus ullamcorper, quis ultricies velit tempus. Praesent tincidunt, sem in porttitor convallis, nunc purus pellentesque libero, nec efficitur metus leo ac nunc. In tempus arcu turpis, nec interdum metus tempus non. Nulla at vestibulum elit, eu vestibulum est. Integer rhoncus orci id dui varius, sagittis faucibus turpis aliquet. Morbi ornare elementum lorem, sit amet gravida magna accumsan quis. Maecenas rutrum pulvinar eros, nec porta mi condimentum eu. Mauris et ultrices erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam hendrerit, turpis a blandit mattis, ligula felis congue ipsum, ac euismod mi arcu non odio. Nulla porttitor augue eget mi pulvinar gravida. Etiam eu lectus non elit tincidunt venenatis. Aliquam sit amet quam scelerisque, bibendum ex a, lobortis justo. 
-          </p>          
+        <div class="col">
+          <div class="subtitle text-center" id="Challenges">Challenges</div>
+            <Navbar items={['Visual Development', 'Technical Development', 'Meet the Team', 'Home']}></Navbar>
+            <div class="row d-flex justify-content-around">
+              <div class="col-6">
+                There were plenty of challenges met during the course of this project. In the early stages, we toyed with working in Unity and taking advantage of the Universal Render Pipeline (URP), as some of the Houdini assets used were already implement in that engine. As we progressed, we realized that Unreal would be worth the effort to port over our progress, mostly to take advantage of MetaHuman and the excellent real-time lighting. It was originally intended that we’d do all of the film in Unreal, but due to incompatibility with Blender’s Poligon plugin (which we were using for textures), we decided it would be for the best to just split the rendering amongst the two programs. The VR scene was done in Unreal, while the real world scene was rendered in Blender.
+              </div>    
+            </div>
+          </div>      
       </div>
       <div class="row vh-100 d-flex">
-        <div class="row">
+        <div class="col">
           <div class="subtitle text-center" id="Meet the Team">Meet the Team</div>
           <Navbar items={['Home']}></Navbar>
         </div>          

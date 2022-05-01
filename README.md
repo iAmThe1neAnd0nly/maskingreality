@@ -2,6 +2,6 @@
 
 Team members:
 
-Jacob Wynn
-JaNiece Campbell
+Jacob Wynn <br>
+JaNiece Campbell <br>
 Justin Dearing
