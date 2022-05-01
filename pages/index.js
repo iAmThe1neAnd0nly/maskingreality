@@ -22,20 +22,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/*} https://stackoverflow.com/questions/49225505/how-to-make-text-wrap-around-image-with-bootstrap-4-without-float
-      <article class="row  mt-5 no-gutters">
-        <div class="col-md-6">
-          <div class="image-wrapper float-start pe-4 ">
-              <img src="https://placeimg.com/150/150/animals" alt=""/>
-          </div>
-          <div class="single-post-content-wrapper p-3">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum enim soluta omnis debitis quam ab nemo necessitatibus.
-              <br/><br/>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ad, ex eaque fuga minus reprehenderit asperiores earum incidunt. Possimus maiores dolores voluptatum enim soluta omnis debitis quam ab nemo necessitatibus.
-          </div>
-        </div>
-      </article>
-      */}
+
+      {
+        // https://stackoverflow.com/questions/49225505/how-to-make-text-wrap-around-image-with-bootstrap-4-without-float0
+      }
       
       <div class="row vh-100 d-flex">
         <div class="col">
@@ -50,13 +40,13 @@ export default function Home() {
             The usage of MetaHuman created some exciting creative opportunities as well. Having access to such a high quality digital actor in the cyberpunk “reality” portion of our video was essential to effective storytelling, especially with our added interest of using custom motion capture data. Though most of the motions seen in this film are from Mixamo, we did get a chance to record, clean, and implement our own data using OptiTrack Motive (later retargeted using Maya’s HumanIK). The benefit of this pipeline is that it plays well with the scrappiness of the creative process. We found plenty of room for experimentation both technically and creatively, leading to many exciting developments in our workflow. 
           </div>
           <div class="row flex-row position-static justify-content-around" style={{"min-width" : "100%"}}>
-            <figure style={{"max-width": "400px"}}>
+            <figure style={{"max-width": "500px"}}>
               <img class="img-fluid figure-img"  height="auto" src="img/mocapOmarTest.gif"/>
               <figcaption class="figure-caption text-center">Early motion capture tests for our MetaHuman</figcaption>
             </figure>
             <figure style={{"max-width": "400px"}}>
-              <img class="img-fluid figure-img"  height="auto" src="img/mocapOmarTest.gif"/>
-              <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+              <img class="img-fluid figure-img"  height="auto" src="img/mocapCleanup.gif"/>
+              <figcaption class="figure-caption text-center">First-pass clean up of our motion data</figcaption>
             </figure>
             <figure style={{"max-width": "400px"}}>
               <img class="img-fluid figure-img"  height="auto" src="img/mocapOmarTest.gif"/>
@@ -70,9 +60,17 @@ export default function Home() {
         <div class="col">
           <div class="subtitle text-center" id="Visual Development">Visual Development</div>
           <Navbar items={['Challenges', 'Technical Development', 'Meet the Team', 'Home']}></Navbar>
-          <div>
+          <figure class="float-end" style={{"max-width": "800px"}}>
+            <img class="img-fluid figure-img"  height="auto" src="img/testRenderProgress.gif"/>
+            <figcaption class="figure-caption text-center">Progress shots of the City</figcaption>
+          </figure>
+          <div class="single-post-content-wrapper p-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus augue sit amet tellus ullamcorper, quis ultricies velit tempus. Praesent tincidunt, sem in porttitor convallis, nunc purus pellentesque libero, nec efficitur metus leo ac nunc. In tempus arcu turpis, nec interdum metus tempus non. Nulla at vestibulum elit, eu vestibulum est. Integer rhoncus orci id dui varius, sagittis faucibus turpis aliquet. Morbi ornare elementum lorem, sit amet gravida magna accumsan quis. Maecenas rutrum pulvinar eros, nec porta mi condimentum eu. Mauris et ultrices erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam hendrerit, turpis a blandit mattis, ligula felis congue ipsum, ac euismod mi arcu non odio. Nulla porttitor augue eget mi pulvinar gravida. Etiam eu lectus non elit tincidunt venenatis. Aliquam sit amet quam scelerisque, bibendum ex a, lobortis justo. 
           </div>   
+          <figure class="" style={{"max-width": "600px"}}>
+            <img class="img-fluid figure-img"  height="auto" src="img/barSceneTest.gif"/>
+            <figcaption class="figure-caption text-center">Test animation of the Bar scene</figcaption>
+          </figure>
         </div>       
       </div>
       <div class="row vh-100 d-flex">
@@ -80,7 +78,7 @@ export default function Home() {
           <div class="subtitle text-center" id="Challenges">Challenges</div>
             <Navbar items={['Visual Development', 'Technical Development', 'Meet the Team', 'Home']}></Navbar>
             <div class="row d-flex justify-content-around">
-              <div class="col-6">
+              <div class="col-6 text-center">
                 There were plenty of challenges met during the course of this project. In the early stages, we toyed with working in Unity and taking advantage of the Universal Render Pipeline (URP), as some of the Houdini assets used were already implement in that engine. As we progressed, we realized that Unreal would be worth the effort to port over our progress, mostly to take advantage of MetaHuman and the excellent real-time lighting. It was originally intended that we’d do all of the film in Unreal, but due to incompatibility with Blender’s Poligon plugin (which we were using for textures), we decided it would be for the best to just split the rendering amongst the two programs. The VR scene was done in Unreal, while the real world scene was rendered in Blender.
               </div>    
             </div>
