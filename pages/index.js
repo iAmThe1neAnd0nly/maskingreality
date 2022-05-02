@@ -50,6 +50,16 @@ export default function Home() {
               
               Thanks to some powerful tools at our disposal (see “Technical Development”), we were able to follow through with our creative plans. 
           </div>
+          <div class="row flex-row position-static justify-content-around" style={{"min-width" : "100%"}}>
+            <figure style={{"max-width": "700px", "width" : "45%"}}>
+              <img class="img-fluid figure-img"  height="auto" src="img/goggles wip.png"/>
+              <figcaption class="figure-caption text-center">VR Goggles Model</figcaption>
+            </figure>
+            <figure style={{"max-width": "700px", "width" : "45%"}}>
+              <img class="img-fluid figure-img"  height="auto" src="img/earlyCave.png"/>
+              <figcaption class="figure-caption text-center">Early work in Houdini for the VR world</figcaption>
+            </figure>
+          </div>  
         </div>       
       </div>
 
@@ -71,13 +81,17 @@ export default function Home() {
             The usage of MetaHuman created some exciting creative opportunities as well. Having access to such a high quality digital actor in the cyberpunk “reality” portion of our video was essential to effective storytelling, especially with our added interest of using custom motion capture data. Though most of the motions seen in this film are from Mixamo, we did get a chance to record, clean, and implement our own data using OptiTrack Motive (later retargeted using Maya’s HumanIK). The benefit of this pipeline is that it plays well with the scrappiness of the creative process. We found plenty of room for experimentation both technically and creatively, leading to many exciting developments in our workflow. 
           </div>
           <div class="row flex-row position-static justify-content-around" style={{"min-width" : "100%"}}>
-            <figure style={{"max-width": "600px", "width" : "45%"}}>
+            <figure style={{"max-width": "500px", "width" : "30%"}}>
               <img class="img-fluid figure-img"  height="auto" src="img/mocapOmarTest.gif"/>
               <figcaption class="figure-caption text-center">Early motion capture tests for our MetaHuman</figcaption>
             </figure>
-            <figure style={{"max-width": "450px", "width" : "45%"}}>
+            <figure style={{"max-width": "350px", "width" : "30%"}}>
               <img class="img-fluid figure-img"  height="auto" src="img/mocapCleanup.gif"/>
               <figcaption class="figure-caption text-center">First-pass clean up of our motion data</figcaption>
+            </figure>
+            <figure style={{"max-width": "600px", "width" : "30%"}}>
+              <img class="img-fluid figure-img"  height="auto" src="img/cliffHDA.png"/>
+              <figcaption class="figure-caption text-center">VR World Cliff HDA</figcaption>
             </figure>
           </div>              
         </div>         
