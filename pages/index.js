@@ -116,19 +116,19 @@ export default function Home() {
         </div>          
         <div class="row d-flex gx-0 vh-100 flex-row">
           <div class="col-4 text-center">
-            <img class="img-fluid portrait" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"></img>
+            <img class="img-fluid portrait" src="img/janiece.png"></img>
             <p class="h3">JaNiece Campbell</p>
             <p>Pipeline/Motion Capture TD</p>
           </div>              
           <div class="col-4 text-center">
-            <img class="img-fluid portrait" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"></img>
+            <img class="img-fluid portrait" src="img/jacob.png"></img>
             <p class="h3">Jacob Wynn</p>
-            <p>Insert Title Here</p>
+            <p>Environment Creation Artist</p>
           </div>              
           <div class="col-4 text-center">
-            <img class="img-fluid portrait" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png"></img>
+            <img class="img-fluid portrait" src="img/justin.png"></img>
             <p class="h3">Justin Dearing</p>
-            <p>Insert Title Here</p>
+            <p>VFX & Environment Artist</p>
           </div>
         </div>
       </div>

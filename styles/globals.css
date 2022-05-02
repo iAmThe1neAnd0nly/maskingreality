@@ -59,9 +59,10 @@ code {
 }
 
 .portrait{
-  width: 300px;
-  height: 300px;
-  border-radius: 400px;
+  width: 300px !important;
+  height: 300px !important;
+  border-radius: 400px !important;
+  object-fit: cover;
   padding-bottom: 8px;
 }
 
