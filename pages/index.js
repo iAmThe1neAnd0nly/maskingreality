@@ -18,7 +18,7 @@ export default function Home() {
           <Navbar items={['Creative Development', 'Technical Development', 'Challenges', 'Meet the Team']}></Navbar>
           <div class="row d-flex gx-0" style={{height: "70%"}}>
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6QXY8Wz341Y" allowFullScreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NpEaa2P7qZI" allowFullScreen></iframe>
             </div>
           </div>
         </div>
