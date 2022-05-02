@@ -7,14 +7,13 @@ import Navbar from '@components/Navbar'
 export default function Home() {
   return (    
     <div class="container-fluid d-flex flex-column">
-      <div class="row d-flex vh-100">
+      <div class="row vh-100 d-flex">
         <div class="col">
-        <Head>
-          <title>Masking Reality</title>
-          <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Roboto&family=Patua+One&display=swap" rel="stylesheet"/>  
-        </Head>
-      
-        
+          <Head>
+            <title>Masking Reality</title>
+            <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Roboto&family=Patua+One&display=swap" rel="stylesheet"/>  
+          </Head>        
+          
           <div class="title text-center" id="Home">Masking Reality</div>
           <Navbar items={['Technical Development', 'Visual Development', 'Challenges', 'Meet the Team']}></Navbar>
           <div class="row d-flex gx-0" style={{height: "70%"}}>
@@ -29,10 +28,12 @@ export default function Home() {
         // https://stackoverflow.com/questions/49225505/how-to-make-text-wrap-around-image-with-bootstrap-4-without-float0
       }
 
-      <div class="row h-25 d-flex m-5">
+      <div class="row d-flex m-5">
         <div class="col">
           <div class="subtitle text-center" id="Technical Development">Technical Development</div>
+          {/*
           <Navbar items={['Visual Development', 'Challenges', 'Meet the Team', 'Home']}></Navbar>
+          */}
           <div class="image-wrapper float-start p-3">
             <img class="img-fluid" width="600px" height="300px"></img>
           </div>
@@ -58,27 +59,35 @@ export default function Home() {
         </div>         
       </div>
       
-      <div class="row h-25 d-flex">
+      <div class="row d-flex">
         <div class="col">
           <div class="subtitle text-center" id="Visual Development">Visual Development</div>
+          {/*
           <Navbar items={['Challenges', 'Technical Development', 'Meet the Team', 'Home']}></Navbar>
-          <figure class="float-end" style={{"max-width": "800px"}}>
+          */}
+          <figure class="float-end m-2" style={{"max-width": "800px", "width": "40%"}}>
             <img class="img-fluid figure-img"  height="auto" src="img/testRenderProgress.gif"/>
             <figcaption class="figure-caption text-center">Progress shots of the City</figcaption>
           </figure>
           <div class="single-post-content-wrapper p-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus augue sit amet tellus ullamcorper, quis ultricies velit tempus. Praesent tincidunt, sem in porttitor convallis, nunc purus pellentesque libero, nec efficitur metus leo ac nunc. In tempus arcu turpis, nec interdum metus tempus non. Nulla at vestibulum elit, eu vestibulum est. Integer rhoncus orci id dui varius, sagittis faucibus turpis aliquet. Morbi ornare elementum lorem, sit amet gravida magna accumsan quis. Maecenas rutrum pulvinar eros, nec porta mi condimentum eu. Mauris et ultrices erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam hendrerit, turpis a blandit mattis, ligula felis congue ipsum, ac euismod mi arcu non odio. Nulla porttitor augue eget mi pulvinar gravida. Etiam eu lectus non elit tincidunt venenatis. Aliquam sit amet quam scelerisque, bibendum ex a, lobortis justo. 
+            <br/>
+            <figure class="float-start m-4" style={{"max-width": "600px", "width": "40%"}}>
+              <img class="img-fluid figure-img"  height="auto" src="img/barSceneTest.gif"/>
+              <figcaption class="figure-caption text-center">Test animation of the Bar scene</figcaption>
+            </figure>
+            <br/>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus augue sit amet tellus ullamcorper, quis ultricies velit tempus. Praesent tincidunt, sem in porttitor convallis, nunc purus pellentesque libero, nec efficitur metus leo ac nunc. In tempus arcu turpis, nec interdum metus tempus non. Nulla at vestibulum elit, eu vestibulum est. Integer rhoncus orci id dui varius, sagittis faucibus turpis aliquet. Morbi ornare elementum lorem, sit amet gravida magna accumsan quis. Maecenas rutrum pulvinar eros, nec porta mi condimentum eu. Mauris et ultrices erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam hendrerit, turpis a blandit mattis, ligula felis congue ipsum, ac euismod mi arcu non odio. Nulla porttitor augue eget mi pulvinar gravida. Etiam eu lectus non elit tincidunt venenatis. Aliquam sit amet quam scelerisque, bibendum ex a, lobortis justo. 
           </div>   
-          <figure class="" style={{"max-width": "600px"}}>
-            <img class="img-fluid figure-img"  height="auto" src="img/barSceneTest.gif"/>
-            <figcaption class="figure-caption text-center">Test animation of the Bar scene</figcaption>
-          </figure>
+          
         </div>       
       </div>
-      <div class="row h-25 d-flex">
+      <div class="row d-flex">
         <div class="col">
           <div class="subtitle text-center" id="Challenges">Challenges</div>
+          {/*
             <Navbar items={['Visual Development', 'Technical Development', 'Meet the Team', 'Home']}></Navbar>
+          */}
             <div class="row d-flex justify-content-around">
               <div class="col-6 text-center">
                 There were plenty of challenges met during the course of this project. In the early stages, we toyed with working in Unity and taking advantage of the Universal Render Pipeline (URP), as some of the Houdini assets used were already implement in that engine. As we progressed, we realized that Unreal would be worth the effort to port over our progress, mostly to take advantage of MetaHuman and the excellent real-time lighting. It was originally intended that we’d do all of the film in Unreal, but due to incompatibility with Blender’s Poligon plugin (which we were using for textures), we decided it would be for the best to just split the rendering amongst the two programs. The VR scene was done in Unreal, while the real world scene was rendered in Blender.
@@ -86,7 +95,7 @@ export default function Home() {
             </div>
           </div>      
       </div>
-      <div class="row h-25 d-flex">
+      <div class="row d-flex">
         <div class="col">
           <div class="subtitle text-center" id="Meet the Team">Meet the Team</div>
           <Navbar items={['Home']}></Navbar>
