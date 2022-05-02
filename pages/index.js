@@ -106,6 +106,8 @@ export default function Home() {
             <div class="row d-flex justify-content-around">
               <div class="col-6 text-center">
                 There were plenty of challenges met during the course of this project. In the early stages, we toyed with working in Unity and taking advantage of the Universal Render Pipeline (URP), as some of the Houdini assets used were already implement in that engine. As we progressed, we realized that Unreal would be worth the effort to port over our progress, mostly to take advantage of MetaHuman and the excellent real-time lighting. It was originally intended that we’d do all of the film in Unreal, but due to incompatibility with Blender’s Poligon plugin (which we were using for textures), we decided it would be for the best to just split the rendering amongst the two programs. The VR scene was done in Unreal, while the real world scene was rendered in Blender.
+                <br/><br/>
+                Naturally there were some aspects that had to be cut throughout the process. Early on we discussed the possibility of using a green screen for some compositing work in the bar scene. For the MetaHuman, we did develop some custom clothing using Marvelous Designer and Quixel Mixer, but working with these tools proved too steep a task given the time (and hardware) constraints.
               </div>    
             </div>
           </div>      
