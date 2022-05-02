@@ -7,12 +7,14 @@ import Navbar from '@components/Navbar'
 export default function Home() {
   return (    
     <div class="container-fluid d-flex flex-column">
-      <Head>
-        <title>Masking Reality</title>
-        <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Roboto&family=Patua+One&display=swap" rel="stylesheet"/>  
-      </Head>
       <div class="row d-flex vh-100">
         <div class="col">
+        <Head>
+          <title>Masking Reality</title>
+          <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Roboto&family=Patua+One&display=swap" rel="stylesheet"/>  
+        </Head>
+      
+        
           <div class="title text-center" id="Home">Masking Reality</div>
           <Navbar items={['Technical Development', 'Visual Development', 'Challenges', 'Meet the Team']}></Navbar>
           <div class="row d-flex gx-0" style={{height: "70%"}}>
@@ -26,8 +28,8 @@ export default function Home() {
       {
         // https://stackoverflow.com/questions/49225505/how-to-make-text-wrap-around-image-with-bootstrap-4-without-float0
       }
-      
-      <div class="row vh-100 d-flex">
+
+      <div class="row h-25 d-flex m-5">
         <div class="col">
           <div class="subtitle text-center" id="Technical Development">Technical Development</div>
           <Navbar items={['Visual Development', 'Challenges', 'Meet the Team', 'Home']}></Navbar>
@@ -56,7 +58,7 @@ export default function Home() {
         </div>         
       </div>
       
-      <div class="row vh-100 d-flex">
+      <div class="row h-25 d-flex">
         <div class="col">
           <div class="subtitle text-center" id="Visual Development">Visual Development</div>
           <Navbar items={['Challenges', 'Technical Development', 'Meet the Team', 'Home']}></Navbar>
@@ -73,7 +75,7 @@ export default function Home() {
           </figure>
         </div>       
       </div>
-      <div class="row vh-100 d-flex">
+      <div class="row h-25 d-flex">
         <div class="col">
           <div class="subtitle text-center" id="Challenges">Challenges</div>
             <Navbar items={['Visual Development', 'Technical Development', 'Meet the Team', 'Home']}></Navbar>
@@ -84,7 +86,7 @@ export default function Home() {
             </div>
           </div>      
       </div>
-      <div class="row vh-100 d-flex">
+      <div class="row h-25 d-flex">
         <div class="col">
           <div class="subtitle text-center" id="Meet the Team">Meet the Team</div>
           <Navbar items={['Home']}></Navbar>
